@@ -12,11 +12,7 @@ function statusChangeCallback(response) {
 }
 
 function changeUser(response) {
-  $("p").hide();
-  .text(response.name);
-  $("img").attr("src","response.picture.data.url");
-}
-
-
-
+  $("p.facebookLogin").hide();
+  $("#name").text(response.name);
+  $("photo").attr("src", response.picture.data.url);
 }

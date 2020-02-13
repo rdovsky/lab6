@@ -27,16 +27,16 @@ function addProjectDetails(e) {
 	var idNumber = projectID.substr('project'.length);
 
 	console.log("User clicked on project " + idNumber);
-	$.get("/project/" + idNumber", callBackFn)
+	//$.get("/project/" + idNumber", callBackFn);
 }
 
 
 function callBackFn(result) {
 	console.log(result);
-	var projectHTML = '<a href="#" class="thumbnail">' +
+/*	var projectHTML = '<a href="#" class="thumbnail">' +
 		'<img src="' + result['image'] + '" class="detailsImage">' +
 		'<p><small>' + result['title'] + '</small></p>' +
 		'<p><small>' + result['date'] + '</small></p></a>';
 		$("#" + projectID + " .details").html(projectHTML+result['summary']);
-
+*/
 }
